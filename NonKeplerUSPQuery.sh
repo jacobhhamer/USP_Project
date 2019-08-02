@@ -1,0 +1,3 @@
+#!/bin/sh
+
+wget "https://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI?table=exoplanets&select=pl_hostname,pl_orbper,pl_orbpererr1,pl_orbpererr2,pl_orbsmax,pl_orbsmaxerr1,pl_orbsmaxerr2,pl_orbeccen,pl_orbeccenerr1,pl_orbeccenerr2,pl_orbincl,pl_orbinclerr1,pl_orbinclerr2,pl_bmassj,pl_bmassjerr1,pl_bmassjerr2, pl_bmassjlim, pl_radj, hip_name,ra,dec,st_radv,st_radverr1,st_radverr2,st_optmag,st_optmagerr, st_optband,st_bmvj,st_bmvjerr,st_rad, st_raderr1, st_raderr2, st_metfe,st_metfeerr1,st_metfeerr2, st_teff, st_tefferr1, st_tefferr2, st_logg, st_loggerr1, st_loggerr2, st_age,st_ageerr1,st_ageerr2,pl_disc_refname, pl_letter&where=pl_kepflag=0&order=ra&format=csv" -O "nonkeplerUSPs.txt"
